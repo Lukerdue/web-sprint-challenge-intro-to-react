@@ -15,7 +15,7 @@ function Character(props){
         color = "darkgray";
     }
     return(
-        <div>
+        <CharStyle>
             <div className="imgWrapper">
                 <img src={character.image} alt={`${character.name}`}/>
             </div>
@@ -23,15 +23,30 @@ function Character(props){
                 <h3>{character.name}</h3>
                 <h5>{character.gender}</h5>
                 <h5>{character.species} || {character.type}</h5>
-            <p strokeColor={color}>{character.status}</p>
+            <p color={{color}}>{character.status}</p>
             <p>Location: {character.location.name}</p>
             </div>
-        </div>
+        </CharStyle>
     )
 }
 
 export default Character
 
 const CharStyle = styled.div`
-color: green;
+display: flex;
+padding: 5%;
+align-items: center;
+justify-content: space-around;
+background-color: rgb(153, 0, 230, 0.8);
+margin: 5%;
+color: white;
+border-radius: 15px;
+border: 3px solid black;
+
+.imgwrapper{
+width: 50%;
+}
+img{
+    border-radius: 15px;
+}
 `
