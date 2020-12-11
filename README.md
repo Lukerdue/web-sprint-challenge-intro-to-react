@@ -30,11 +30,21 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+      React js lets us create websites dynamically and allows us to better manipulate the DOM easily.
+
 1. Describe component state.
+
+    component state holds some information that may change over the life of a react component.
 
 1. Describe props.
 
+    props are peices of code passed from parent to child components in their function arguments.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+    Side effects are a result of pure vs impure functions, which is to say pure functions don't affect anything outside of themselves,
+    but impure functions may change other things around it upon completion like getting an HTTP request back, updating state, etc. We can sync 
+    our side effects by using the useEffect react hook to make a side effect happen around a certain bit of code or a certain component.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
